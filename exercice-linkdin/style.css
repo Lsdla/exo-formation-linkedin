@@ -1,0 +1,31 @@
+img{
+    width: 30%;
+    height: auto;
+}
+
+#galleryContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(79, 114, 160);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 3s, visibility 1s;
+}
+
+#galleryContainer img{
+    max-height: 90%;
+    width: auto;
+}
+
+#galleryContainer.visible{
+    opacity: 1;
+    visibility: visible;
+}
